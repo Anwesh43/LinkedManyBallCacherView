@@ -216,4 +216,13 @@ class ManyBallCatcherView(ctx : Context) : View(ctx) {
             }
         }
     }
+
+    companion object {
+
+        fun create(activity : Activity) : ManyBallCatcherView {
+            val view : ManyBallCatcherView = ManyBallCatcherView(activity)
+            activity.setContentView(view)
+            return view
+        }
+    }
 }
