@@ -31,7 +31,7 @@ fun Float.divideScale(i : Int, n : Int) : Float = Math.min(n.inverse(), maxScale
 fun Float.sinify() : Float = Math.sin(this * Math.PI).toFloat()
 
 fun Canvas.drawManyBallCatcher(scale : Float, w : Float, h : Float, paint : Paint) {
-    val r : Float = w / (4 * balls + 2)
+    val r : Float = w / (2 * balls + 3)
     val size : Float = w / 2
     val sf : Float = scale.sinify()
     val sf1 : Float = sf.divideScale(0, parts)
