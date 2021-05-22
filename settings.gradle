@@ -1,0 +1,3 @@
+include ':manyballcatcherview'
+include ':app'
+rootProject.name = "LinkedManyBallCacherView"
